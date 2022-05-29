@@ -3,6 +3,8 @@ Source code for Ashley's Trijam #171 entry. The theme is "Watch your step."
 
 [Trijam](https://itch.io/jam/trijam-171) is a weekly game jam where the goal is to create a game in under 3 hours of development time.
 
+Total Dev Time: < 3 hours.  I was able to leverage some code from a previous Trijam.
+
 ## Synopsis
 
 **Wrong Step, You Fall** is a memory based game where you are stuck in a cave trying to safely find your way out. 
