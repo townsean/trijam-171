@@ -13,6 +13,8 @@ Select the wrong tile and you'll fall.
 
 Use *arrow keys* or *WASD* to move your character around.  *Mouse click* to inspect a tile before stepping on it. Use this ability wisely. There is a limited number of times where an inspection can be used.
 
+![Wrong Step, You Fall Gameplay](assets/screenshot.gif)
+
 ## Built With
 
 * Visual Studio Code
