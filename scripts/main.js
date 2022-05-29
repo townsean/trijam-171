@@ -251,7 +251,7 @@ function main() {
 
     const startButton = document.getElementById('start-button');
     startButton.addEventListener("click", () => {
-        playSound('assets/loop.wav', 0.25, true);
+        playSound('assets/loop.wav', 0.5, true);
 
         const overlay = document.getElementById('start-game-table-overlay');
         overlay.classList.add('hidden');
