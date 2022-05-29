@@ -1,5 +1,5 @@
 # trijam-171
-Source code for Ashley's Trijam #171 entry. The theme is "Watch your step."  I like to add an additional constraint of only being able to use native HTML and JavaScript with no HTML5 canvas. 
+Source code for [Ashley's Trijam #171 entry](https://itch.io/jam/trijam-171/rate/1550925). The theme is "Watch your step."  I like to add an additional constraint of only being able to use native HTML and JavaScript with no HTML5 canvas. 
 
 [Trijam](https://itch.io/jam/trijam-171) is a weekly game jam where the goal is to create a game in under 3 hours of development time.
 
