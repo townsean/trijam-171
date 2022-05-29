@@ -1,0 +1,234 @@
+:root {
+    --eye-ball-gradient: radial-gradient(circle, black 35%, white 35%);
+}
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(goldenrod, black);
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+header {
+    background: black;
+    box-shadow: 0 0 15px rgba(64, 60, 60, 0.7);
+}
+
+header,
+footer {
+    padding: 15px;
+}
+
+main {
+    width: 65vmin;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main,
+footer {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h1 {
+    font-size: 2.75rem;
+    text-align: center;
+    font-family: 'Rubik Wet Paint', sans-serif;
+    color: goldenrod;
+    text-shadow: 4px 4px black;
+}
+
+button {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    background: white;
+    cursor: pointer;
+}
+
+button:hover {
+    transition: background-color 75ms linear;
+    background: darkgoldenrod;
+    color: white;
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+    background: radial-gradient(circle, darkgoldenrod, rgba(0, 0, 0, 0.35));
+}
+
+table,
+tr,
+td {
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+tr,
+td {
+    padding: 0;
+    margin: 0;
+}
+
+td {
+    box-sizing: border-box;
+    height: 6.5vmin;
+    width: 6.5vmin;
+}
+
+.table-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.visibility--hidden {
+    visibility: hidden;
+}
+
+.game-stats {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.instructions {
+    color: white;
+    text-shadow: 1px 1px black;
+    margin: 0 30px 60px 30px;
+    font-size: 2vmin;
+    text-align: center;
+}
+
+.player {
+    background: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.player::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: var(--eye-ball-gradient);
+    top: 1.5vmin;
+    left: 1.25vmin;
+    width: 1.5vmin;
+    height: 1.5vmin;
+}
+
+.player::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    background: var(--eye-ball-gradient);
+    top: 1.5vmin;
+    left: 3.5vmin;
+    width: 1.5vmin;
+    height: 1.5vmin;
+}
+
+.flashing-red {
+    animation: 750ms infinite alternate-reverse flashred; 
+}
+
+.ending-tile {
+    background: radial-gradient(circle, lime, green);
+}
+
+.starting-tile {
+    background: radial-gradient(circle, red, darkred);
+}
+
+.reveal-tile {
+    transition: background-color 250ms linear;
+    background: radial-gradient(circle, black, rgb(42, 39, 39));
+}
+
+.reveal-safe-tile {
+    transition: background-color 250ms linear;
+    background: radial-gradient(circle, goldenrod, transparent);
+}
+
+#start-game-table-overlay,
+#end-game-table-overlay,
+#victory-table-overlay {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 65vh;
+    top: 0;
+}
+
+#start-game-table-overlay > div,
+#end-game-table-overlay > div,
+#victory-table-overlay > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#lives-label {
+    text-align: left;
+}
+
+#lives-label::before {
+    content: "Lives: "
+}
+
+#probes-label {
+    text-align: right;
+    margin-left: auto;
+}
+
+#probes-label::before {
+    content: "Probes: "
+}
+
+@keyframes flashred {
+    from {
+        color: black;
+    }
+
+    to {
+        color: red;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 1rem;
+    }
+
+    .game-stats {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&display=swap" rel="stylesheet">
+        <title>Wrong Step, You Fall | Trijam #171</title>       
+        <link href="styles/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <a  href="https://github.com/townsean/trijam-171">Wrong Step, You Fall | Trijam #171</a>
+        </header>
+        <main>
+            <section class="game-stats visibility--hidden">
+                <label id="lives-label"></label>
+                <label id="probes-label"></label>
+            </section>
+            <!-- Start Screen -->
+            <section class="table-container">
+                <!-- Game Table -->
+                <table id="game-table"></table>
+                <!-- Play Screen -->
+                <section id="start-game-table-overlay" class="">
+                    <div>
+                        <h1>Wrong Step, You Fall</h1>
+                        <section class="instructions">
+                            Exit the cavern without falling to your doom!
+                            <br>
+                            Avoid steping on fragile spots. Use a probe to inspect the stablity of a spot.
+                            <br><br>
+                            Use the <strong>arrow keys</strong> or <strong>WASD</strong> to move. <strong>Mouse click</strong> on a tile to inspect it before stepping onto it.
+                        </section>
+                        <button id="start-button">Start Game</button>
+                    </div>
+                </section>
+                <!-- End Game Screen -->
+                <section id="end-game-table-overlay" class="hidden">
+                    <div>
+                        <h1>Game Over</h1>
+                        <button id="restart-button">Restart Game</button>
+                    </div>
+                </section>
+                <!-- Victory Screen -->
+                <section id="victory-table-overlay" class="hidden">
+                    <div>
+                        <h1>Congrats, you made it out alive</h1>
+                        <button id="restart-victory-button">Restart Game</button>
+                    </div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <a href="https://twitter.com/thecodingcouple">A game by Ashley | @thecodingcouple</a>
+        </footer>
+        <script type="module" src="scripts/main.js"></script>
+    </body>
+</html>
