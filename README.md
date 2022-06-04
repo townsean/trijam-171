@@ -15,7 +15,7 @@ Use *arrow keys* or *WASD* to move your character around.  *Mouse click* to insp
 
 ![Wrong Step, You Fall Gameplay](assets/screenshot.gif)
 
-Wrong Step, You Fall [ranked 22 out of 61 entries](https://itch.io/jam/trijam-171/results).
+Wrong Step, You Fall [ranked 25 out of 61 entries](https://itch.io/jam/trijam-171/results).
 
 <img src="assets/results.png" maxwidth="800">
 
